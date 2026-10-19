@@ -1,5 +1,6 @@
 import {WhatsAppNumber,ChatNumber,PasskeyCredential,SessionId} from "./nominal.ts";
 export * from "./nominal.ts";
+export * from "./provenance.ts";
 export interface EvolutionGoClient{checkWhatsAppExists(chatNumber:string):Promise<boolean>;sendMessage(chatNumber:string,message:string):Promise<void>}
 export interface PasskeyAuthenticator{validate(passkey:string,sessionId:string):Promise<boolean>}
 export interface AuthResult{authenticated:boolean;sessionId:string}
